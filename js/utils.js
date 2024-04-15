@@ -16,4 +16,5 @@ const COLUMNS = {
   Perspective: 'Perspective'
 };
 
-const worldmapUrl = 'data/world.geojson';
+// const worldmapUrl = 'data/world.geojson';
+const worldmapUrl = 'https://fecosta.github.io/generic_files/data/world.geojson';
