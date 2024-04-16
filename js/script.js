@@ -1,6 +1,6 @@
 // Data source
-// const filteredDataUrl = 'data/processed/filtered-final.csv';
-const filteredDataUrl = 'https://raw.githubusercontent.com/fecosta/generic_files/main/data/processed/filtered-final.csv';
+const filteredDataUrl = 'data/processed/filtered-final.csv';
+// const filteredDataUrl = 'https://raw.githubusercontent.com/fecosta/generic_files/main/data/processed/filtered-final.csv';
 // Graph setup
 const width = 800;
 const height = 600;
