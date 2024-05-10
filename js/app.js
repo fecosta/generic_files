@@ -1,6 +1,6 @@
-const worldmapUrl = 'data/world.geojson';
-const finalDataUrl = 'data/processed/final.csv';
-const finalTableDataUrl = 'data/processed/final_table.csv';
+const worldmapUrl = 'https://fecosta.github.io/generic_files/data/world.geojson';
+const finalDataUrl = 'https://fecosta.github.io/generic_files/data/processed/final.csv';
+const finalTableDataUrl = 'https://fecosta.github.io/generic_files/data/processed/final_table.csv';
 
 const COLUMNS = {
   Name: 'name',
