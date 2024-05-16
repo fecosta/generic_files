@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             '.wrapper { width: fit-content; border: solid 3px #0067ff; padding: 1rem 1.5rem; }' +
             'h3 { color: #282828; font-size: 1rem; }' +
             'p { color: #282828; }' +
+            'table {table {width: 100%; border-collapse: collapse; border: 1px solid #ccc;' +
             '</style>');
 
         printWindow.document.write('</head><body>');
