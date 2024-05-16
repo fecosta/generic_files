@@ -13,11 +13,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             'body { font-family: system-ui; font-size: 1rem; }' +
             ' figure {margin: unset;}' +
             'figure img {max-width: 250px; height: auto;}' +
-            '.wrapper { width: fit-content; border: solid 3px #0067ff; padding: 1rem 1.5rem; }' +
+            '.wrapper { width: fit-content; border: solid 3px #000; padding: 1rem 1.5rem; }' +
             'h3 { color: #282828; font-size: 1rem; }' +
             'p { color: #282828; }' +
-            'table {width: 100%; border-collapse: collapse; border: 1px solid #ccc;}' +
-            '#chart {width:100%; height:650px;}' +
+            '.table {width: 100%; border-collapse: collapse; border: 1px solid #ccc;}' +
+            'th, td {padding: 15px;text-align: left;}' +
+            'tr:nth-child(even) {background-color: #f2f2f2;}' +
+            '#chart {width:100%; height:610px;}' +
+            '#color-bar {width: fit-content;}' +
             '</style>');
 
         printWindow.document.write('</head><body>');
@@ -32,3 +35,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }, 200);
     });
 });
+
