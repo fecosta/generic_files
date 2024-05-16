@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             'h3 { color: #282828; font-size: 1rem; }' +
             'p { color: #282828; }' +
             'table {table {width: 100%; border-collapse: collapse; border: 1px solid #ccc;}' +
-            '#chart-container {width:100%; height:650px;}' +
+            '#chart {width:100%; height:650px;}' +
             '</style>');
 
         printWindow.document.write('</head><body>');
