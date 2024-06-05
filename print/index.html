@@ -1,28 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Print Proxy Content</title>
-    <script>
-        async function printIframeContent() {
-            try {
-                const response = await fetch('/proxy');
-                const text = await response.text();
-                const printWindow = window.open('', '_blank');
-                printWindow.document.open();
-                printWindow.document.write(text);
-                printWindow.document.close();
-                printWindow.focus();
-                printWindow.print();
-                printWindow.close();
-            } catch (error) {
-                console.error('Error fetching the content', error);
+<!-- @model string -->
+<html>
+    <head>
+        <title>IFrame Proxy</title>
+        <style>
+            html, body, iframe {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border-style: none;
             }
-        }
-    </script>
-</head>
-<body>
-    <button onclick="printIframeContent()">Print iframe content</button>
-</body>
+        </style>
+
+    </head>
+    <body>
+        <iframe src="@Model" seamless></iframe>
+    </body>
 </html>

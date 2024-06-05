@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('printButton').addEventListener('click', function() {
         var printContents = document.querySelector('.print-this-div').innerHTML;
+        var oIframe = document.getElementById('ifrmPrint').innerHTML;
 
         // Open a new window
         var printWindow = window.open('', '_blank');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Add your styles
         printWindow.document.write('<style>' +
-            'body { font-family: system-ui; font-size: 1rem; }' +
+            'body { font-family: system-ui; font-size: 1em; }' +
             ' figure {margin: unset;}' +
             'figure img {max-width: 250px; height: auto;}' +
             '.wrapper { width: fit-content; border: solid 3px #000; padding: 1rem 1.5rem; }' +
